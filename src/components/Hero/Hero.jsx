@@ -59,7 +59,7 @@ const Hero = () => {
             <span className='text-white sm:text-4xl md:text-5xl'>
               Hello, I'm
             </span> <br />
-            <span className='bg-linear-to-r text-bold from-purple-400 to-pink-500 bg-clip-text text-transparent inline-block min-w-70 sm:min-w-80 lg:min-w-200'>
+            <span className='bg-linear-to-r text-bold from-purple-400 to-pink-500 bg-clip-text text-transparent inline-block min-w-70 sm:min-w-40 lg:min-w-200'>
               {displayText}
               <span className='animate-pulse'>|</span>
             </span>
@@ -67,7 +67,7 @@ const Hero = () => {
           </h2>
 
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-4 mt-4 leading-relaxed text-justify">
-            Full-Stack Developer and competitive programmer with strong DSA fundamentals, experienced in building scalable web applications and AI-powered products using modern tech stacks.
+            Full-Stack Developer and competitive programmer with strong DSA fundamentals, experienced in building scalable web applications using modern tech stacks.
           </p>
 
           <div className='flex md:flex space-x-4 text-gray-300 mr-4 justify-center items-center md:justify-start'>
