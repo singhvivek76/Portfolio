@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id='about'
-      className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-6 md:mt-18 lg:mt-16'
+      className='py-2 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-6 md:mt-5 lg:mt-6'
     >
       <div className='text-center mb-4'>
         <h2 className='text-4xl font-bold bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent mb-4 text-center mt-4'>
@@ -17,7 +17,7 @@ const Hero = () => {
         <div className='w-35 h-1 bg-[#8245ec] mx-auto mt-2'></div>
       </div>
       
-      <div className='flex flex-col md:flex-row justify-between mt-8 md:mt-0 gap-x-4 md:flex-row'>
+      <div className='flex flex-col md:flex-row justify-between mt-4 md:mt-0 gap-x-4 md:flex-row'>
         
         <div className='md:w-1/2 text-center md:text-left mt-4 md:mt-0'>
           <img src={profileImage} alt='Vivek Kumar Singh'

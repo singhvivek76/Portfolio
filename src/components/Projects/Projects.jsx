@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <section 
       id='projects' 
-      className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative clip-path-custom'
+      className='py-5 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative'
     >
       <div className='text-center mb-4'>
         <h2 className='text-4xl font-bold bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent mb-4 text-center mt-4'>
