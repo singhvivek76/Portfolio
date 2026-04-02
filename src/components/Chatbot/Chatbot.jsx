@@ -390,11 +390,12 @@ const Chatbot = () => {
                 placeholder="Ask about skills, projects, or say go to contact"
                 className="h-12 flex-1 rounded-full border border-white/10 bg-white/5 px-4 text-sm text-white outline-none placeholder:text-gray-500 focus:border-purple-400/60"
               />
-
+            </div>
+            <div className="mt-3 flex  w-full">
               <button
                 type="button"
                 onClick={() => handleSend(input)}
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-[#8245ec] to-[#ec4899] text-white transition hover:scale-105"
+                className="flex h-12 w-12 items-center justify-center rounded-full w-full bg-gradient-to-r from-[#8245ec] to-[#ec4899] text-white transition hover:scale-105"
                 aria-label="Send message"
               >
                 <FaPaperPlane />
