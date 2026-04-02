@@ -7,6 +7,7 @@ import Projects from './components/Projects/Projects'
 import Education from './components/Education/Education'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Chatbot from './components/Chatbot/Chatbot'
 import BlurBlob from './BlurBlob'
 
 
@@ -30,6 +31,7 @@ const App = () => {
         <Education />
         <Contact />
         <Footer />
+        <Chatbot />
       </div>
     </div>
   )

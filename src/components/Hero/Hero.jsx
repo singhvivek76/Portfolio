@@ -100,8 +100,8 @@ const Hero = () => {
           <br /><br />
 
           <a
-            href="/vivekkrsingh.pdf"
-            download="VivekKumarSingh_Resume.pdf"
+            href="/Vivek_Resume.pdf"
+            download="Vivek_Resume.pdf"
             rel="noopener noreferrer"
             className="inline-block w-full text-white py-4 px-14 rounded-full font-bold transition duration-300 transform hover:scale-110 text-center bg-gradient-to-r from-[#8245ec] to-[#a855f7] shadow-lg hover:shadow-[#8245ec]/50"
             style={{
