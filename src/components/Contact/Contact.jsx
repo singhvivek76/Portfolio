@@ -1,13 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {SiLeetcode} from 'react-icons/si'
 
-const Contact = () => {
+const Contact = ({ theme }) => {
   const form = useRef();
-  const [isSent, setIsSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -21,7 +20,6 @@ const Contact = () => {
       )
       .then(
         () => {
-          setIsSent(true);
           form.current.reset(); // Reset form fields after sending
           toast.success("Message sent successfully! ✅", {
             position: "top-right",
@@ -30,7 +28,7 @@ const Contact = () => {
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-            theme: "dark",
+            theme,
           });
         },
         (error) => {
@@ -42,7 +40,7 @@ const Contact = () => {
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-            theme: "dark",
+            theme,
           });
         },
       );
@@ -59,7 +57,7 @@ const Contact = () => {
           Contact
         </h2>
         <div className="w-30 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+        <p className="text-[var(--color-text-soft)] mt-4 text-lg font-semibold">
           I’d love to hear from you—reach out for any opportunities or
           questions!
         </p>
@@ -70,19 +68,19 @@ const Contact = () => {
           <h5 className="text-4xl font-bold mt-4 my-2 bg-linear-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
             Let&apos;s Connect
           </h5>
-          <p className="text-[#ADB7BE] mb-4 max-w-md leading-relaxed text-justify">
+          <p className="text-[var(--color-text-muted)] mb-4 max-w-md leading-relaxed text-justify">
             {" "}
             I&apos;m currently looking for new opportunities, my inbox is always
             open. Whether you have a question or just want to say hi, I&apos;ll
             try my best to get back to you!
           </p>
 
-          <div className="flex md:flex space-x-4 text-gray-300 mr-4 justify-center items-center md:justify-start">
+          <div className="flex md:flex space-x-4 text-[var(--color-text-muted)] mr-4 justify-center items-center md:justify-start">
             <a
               href="https://github.com/singhvivek76"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-[#8245ec]"
+              className="text-[var(--color-text-muted)] hover:text-[#8245ec]"
             >
               <FaGithub size={28} />
             </a>
@@ -90,7 +88,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/singhvivek76/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-[#8245ec]"
+              className="text-[var(--color-text-muted)] hover:text-[#8245ec]"
             >
               <FaLinkedin size={28} />
             </a>
@@ -98,15 +96,15 @@ const Contact = () => {
               href="https://leetcode.com/u/tovivek/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-[#8245ec]"
+              className="text-[var(--color-text-muted)] hover:text-[#8245ec]"
             >
               <SiLeetcode size={28} />
             </a>
           </div>
         </div>
 
-        <div className="mt-8 w-full max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700">
-          <h3 className="text-xl font-semibold text-white text-center">
+        <div className="mt-8 w-full max-w-md bg-[var(--color-bg-card)] p-6 rounded-lg shadow-lg border border-[var(--color-border-strong)]">
+          <h3 className="text-xl font-semibold text-[var(--color-text)] text-center">
             Connect With Me <span className="ml-1">🚀</span>
           </h3>
 
@@ -120,34 +118,34 @@ const Contact = () => {
               name="user_email"
               placeholder="Your Email"
               required
-              className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
+              className="w-full p-3 rounded-md bg-[var(--color-bg-card-strong)] text-[var(--color-text)] border border-[var(--color-border)] focus:outline-none focus:border-purple-500"
             />
             <input
               type="text"
               name="user_name"
               placeholder="Your Name"
               required
-              className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
+              className="w-full p-3 rounded-md bg-[var(--color-bg-card-strong)] text-[var(--color-text)] border border-[var(--color-border)] focus:outline-none focus:border-purple-500"
             />
             <input
               type="text"
               name="subject"
               placeholder="Subject"
               required
-              className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
+              className="w-full p-3 rounded-md bg-[var(--color-bg-card-strong)] text-[var(--color-text)] border border-[var(--color-border)] focus:outline-none focus:border-purple-500"
             />
             <textarea
               name="message"
               placeholder="Message"
               rows="4"
               required
-              className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
+              className="w-full p-3 rounded-md bg-[var(--color-bg-card-strong)] text-[var(--color-text)] border border-[var(--color-border)] focus:outline-none focus:border-purple-500"
             />
 
             {/* Send Button */}
             <button
               type="submit"
-              className="w-full bg-gradient-to-r cursor-pointer transition duration-300 transform hover:scale-105 from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:opacity-90 transition"
+              className="w-full bg-gradient-to-r cursor-pointer transition duration-300 transform hover:scale-105 from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-full hover:opacity-90 transition"
             >
               Send
             </button>

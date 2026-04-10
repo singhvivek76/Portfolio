@@ -11,11 +11,9 @@ const portfolioLinks = {
 
 const commandSuggestions = [
   'Tell me about Vivek',
-  'Show projects',
   'What skills do you have?',
-  'Go to contact',
   'Open GitHub',
-  
+  'Download resume',
 ];
 
 const getBrowserRecognition = () => {
@@ -152,11 +150,11 @@ const Chatbot = () => {
       return "Hi! You can ask me about Vivek's skills, projects, education, resume, or ask me to navigate the page.";
     }
 
-    if (query.includes('help') || query.includes('command')) {
+    if (query.includes('help') || query.includes('command') || query.includes('Help') || query.includes('Command') || query.includes('HELP') || query.includes('COMMAND')) {
       return "Try: 'go to about', 'show projects', 'what skills do you have?', 'download resume', 'open GitHub', or 'how can I contact Vivek?'.";
     }
 
-    if (query.includes('go to home') || query.includes('scroll to home')) {
+    if (query.includes('go to home') || query.includes('scroll to home') || query.includes('Go to home') || query.includes('Go to Home') || query.includes('GO TO HOME') || query.includes('Scroll to home') || query.includes('Scroll to Home') || query.includes('SCROLL TO HOME')) {
       return navigateToSection('home', 'home');
     }
 
@@ -176,43 +174,43 @@ const Chatbot = () => {
       return navigateToSection('education', 'education');
     }
 
-    if (query.includes('go to contact') || query.includes('scroll to contact') || query.includes('contact me')) {
+    if (query.includes('go to contact') || query.includes('scroll to contact') || query.includes('Go to contact') || query.includes('Go to Contact') || query.includes('contact me') || query.includes('Contact me') || query.includes('CONTACT ME') || query.includes('scroll to contact') || query.includes('Scroll to contact') || query.includes('Scroll to Contact')) {
       return navigateToSection('contact', 'contact');
     }
 
-    if (query.includes('resume') || query.includes('cv')) {
+    if (query.includes('resume') || query.includes('resumes') || query.includes('cv') || query.includes('Resume') || query.includes('Resumes') || query.includes('RESUME') || query.includes('Cv') || query.includes('CV')) {
       return openLink(portfolioLinks.resume, 'the resume');
     }
 
-    if (query.includes('github')) {
+    if (query.includes('github') || query.includes('GitHub') || query.includes('GITHUB')) {
       return openLink(portfolioLinks.github, 'GitHub');
     }
 
-    if (query.includes('linkedin')) {
+    if (query.includes('linkedin') || query.includes('LinkedIn') || query.includes('LINKEDIN')) {
       return openLink(portfolioLinks.linkedin, 'LinkedIn');
     }
 
-    if (query.includes('leetcode')) {
+    if (query.includes('leetcode') || query.includes('LeetCode') || query.includes('LEETCODE')) {
       return openLink(portfolioLinks.leetcode, 'LeetCode');
     }
 
-    if (query.includes('who is vivek') || query.includes('tell me about vivek') || query.includes('about vivek')) {
+    if (query.includes('who is vivek') || query.includes('vivek') || query.includes("Vivek") || query.includes('VIVEK') || query.includes('WHO IS VIVEK') || query.includes('tell me about vivek') || query.includes('Tell me about vivek') || query.includes('TELL ME ABOUT VIVEK') || query.includes('Tell me about Vivek') || query.includes('about vivek') || query.includes('Who is Vivek') || query.includes('Tell me about Vivek') || query.includes('About Vivek') || query.includes('who is Vivek') || query.includes('Who is vivek')) {
       return "Vivek Kumar Singh is a full-stack developer and Computer Science student at Meerut Institute of Technology. He focuses on scalable web apps, strong DSA fundamentals, and problem solving with modern frontend and backend tools.";
     }
 
-    if (query.includes('skills') || query.includes('tech stack')) {
+    if (query.includes('skills') || query.includes('tech stack') || query.includes('Skills') || query.includes('skill') || query.includes('SKILL') || query.includes('SKILLS')) {
       return getSkillsSummary();
     }
 
-    if (query.includes('project') || query.includes('work')) {
+    if (query.includes('project') || query.includes('work') || query.includes('projectS') || query.includes('Project') || query.includes('Work') || query.includes('Projects') || query.includes('PROJECT') || query.includes('WORK') || query.includes('PROJECTS')) {
       return getProjectsSummary();
     }
 
-    if (query.includes('education') || query.includes('study') || query.includes('college')) {
+    if (query.includes('education') || query.includes('educations') || query.includes('Education') || query.includes('Educations') || query.includes('EDUCATION') || query.includes('EDUCATIONS') || query.includes('study') || query.includes('college')) {
       return getEducationSummary();
     }
 
-    if (query.includes('contact') || query.includes('email') || query.includes('reach')) {
+    if (query.includes('contact') || query.includes('contactS') || query.includes('CONTACT') || query.includes('CONTACTS') || query.includes('email') || query.includes('reach')) {
       return "You can reach Vivek from the contact section on this page, or use the GitHub, LinkedIn, and LeetCode links shown in the portfolio.";
     }
 

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-import {FiMenu, FiX} from 'react-icons/fi'
+import {FiMenu, FiMoon, FiSun, FiX} from 'react-icons/fi'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {SiLeetcode} from 'react-icons/si'
 
-const Navbar = () => {
+const Navbar = ({ theme, onToggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,17 +44,17 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-colors duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
-      isScrolled ? 'bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md' : 'bg-transparent'
+      isScrolled ? 'bg-[var(--navbar-bg)] backdrop-blur-md shadow-[var(--shadow-soft)]' : 'bg-transparent'
     }`}>
-        <div className='text-white py-5 flex justify-between items-center'>
+        <div className='py-5 flex justify-between items-center text-[var(--color-text)]'>
           <div className='text-lg font-bold cursor-pointer'>
             <span className='text-[#8245ec]'>&lt;</span>
-            <span className='text-white'> Vivek Kumar Singh</span>
+            <span className='text-[var(--color-text)]'> Vivek Kumar Singh</span>
             <span className='text-[#8245ec]'>/</span>
             <span className='text-[#8245ec]'>&gt;</span>
           </div>
           
-          <ul className='hidden md:flex space-x-8 text-gray-300'>
+          <ul className='hidden md:flex space-x-8 text-[var(--color-text-muted)]'>
             {menuItems.map((item) => (
               <li key={item.id} className={`cursor-pointer hover:text-[#8245ec] ${
                 activeSection === item.id ? 'text-[#8245ec]' : ''
@@ -65,6 +65,16 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+            <div className='flex items-center gap-3'>
+              <button
+                type="button"
+                onClick={onToggleTheme}
+                className='flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-surface-soft)] text-[var(--color-text)] transition hover:border-[#8245ec] hover:text-[#8245ec]'
+                aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+              >
+                {theme === 'dark' ? <FiSun className='text-xl' /> : <FiMoon className='text-xl' />}
+              </button>
 
             <div className='md:hidden'>
               {
@@ -79,14 +89,15 @@ const Navbar = () => {
                 )
               }
             </div>
+            </div>
 
         </div>
 
         {isOpen && (
-          <div className='absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden'>
-            <ul className='flex flex-col items-center space-y-4 py-4 text-gray-300'>
+          <div className='absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-elevated)] backdrop-filter backdrop-blur-lg z-50 shadow-[var(--shadow-soft)] md:hidden'>
+            <ul className='flex flex-col items-center space-y-4 py-4 text-[var(--color-text-muted)]'>
               {menuItems.map((item) => (
-                <li key={item.id} className={`cursor-pointer hover:text-white
+                <li key={item.id} className={`cursor-pointer hover:text-[var(--color-text)]
                   ${activeSection === item.id ? 'text-[#8245ec]' : ""  
                 }`}>
                   <button onClick={() => handleMenuItemClick(item.id)}>
@@ -98,19 +109,19 @@ const Navbar = () => {
               <div className='flex space-x-4'>
                 <a href="https://github.com/singhvivek76"
                   target="_blank" rel="noopener noreferrer"
-                  className='text-gray-300 hover:text-white'
+                  className='text-[var(--color-text-muted)] hover:text-[var(--color-text)]'
                 >
                   <FaGithub size={24} />
                 </a>
                 <a href="https://www.linkedin.com/in/singhvivek76/"
                   target="_blank" rel="noopener noreferrer"
-                  className='text-gray-300 hover:text-white'
+                  className='text-[var(--color-text-muted)] hover:text-[var(--color-text)]'
                 >
                   <FaLinkedin size={24} />
                 </a>
                 <a href="https://leetcode.com/u/tovivek/"
                   target="_blank" rel="noopener noreferrer"
-                  className='text-gray-300 hover:text-white'
+                  className='text-[var(--color-text-muted)] hover:text-[var(--color-text)]'
                 >
                   <SiLeetcode size={24} />
                 </a>

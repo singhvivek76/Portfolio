@@ -3,12 +3,13 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {SiLeetcode} from 'react-icons/si'
 import profileImage from '../../assets/profile.jpeg'
 
+const texts = ['Vivek Kumar Singh', 'Full Stack Developer', 'Problem Solver'];
+
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const texts = ['Vivek Kumar Singh', 'Full Stack Developer', 'Problem Solver'];
   const typingSpeed = 100;
   const erasingSpeed = 50;
   const delayBetweenTexts = 2000;
@@ -56,7 +57,7 @@ const Hero = () => {
         <div className='md:w-1/2 text-center md:text-left mt-4 md:mt-0'>
           
           <h2 className='mb-4 text-4xl lg:text-5xl font-bold tracking-tight leading-tight sm:text-5xl'>
-            <span className='text-white sm:text-4xl md:text-5xl'>
+            <span className='text-[var(--color-text)] sm:text-4xl md:text-5xl'>
               Hello, I'm
             </span> <br />
             <span className='bg-linear-to-r text-bold from-purple-400 to-pink-500 bg-clip-text text-transparent inline-block min-w-70 sm:min-w-40 lg:min-w-200'>
@@ -66,26 +67,26 @@ const Hero = () => {
 
           </h2>
 
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-4 mt-4 leading-relaxed text-justify">
+          <p className="text-base sm:text-lg md:text-lg text-[var(--color-text-soft)] mb-4 mt-4 leading-relaxed text-justify">
             Full-Stack Developer and competitive programmer with strong DSA fundamentals, experienced in building scalable web applications using modern tech stacks.
           </p>
 
-          <div className='flex md:flex space-x-4 text-gray-300 mr-4 justify-center items-center md:justify-start'>
+          <div className='flex md:flex space-x-4 text-[var(--color-text-muted)] mr-4 justify-center items-center md:justify-start'>
                       <a href="https://github.com/singhvivek76"
                         target="_blank" rel="noopener noreferrer"
-                        className='text-gray-300 hover:text-[#8245ec]'
+                        className='text-[var(--color-text-muted)] hover:text-[#8245ec]'
                       >
                         <FaGithub size={28} />
                       </a>
                       <a href="https://www.linkedin.com/in/singhvivek76/"
                         target="_blank" rel="noopener noreferrer"
-                        className='text-gray-300 hover:text-[#8245ec]'
+                        className='text-[var(--color-text-muted)] hover:text-[#8245ec]'
                       >
                         <FaLinkedin size={28} />
                       </a>
                       <a href="https://leetcode.com/u/tovivek/"
                         target="_blank" rel="noopener noreferrer"
-                        className='text-gray-300 hover:text-[#8245ec]'
+                        className='text-[var(--color-text-muted)] hover:text-[#8245ec]'
                       >
                         <SiLeetcode size={28} />
                       </a>
@@ -117,7 +118,7 @@ const Hero = () => {
         <div className='md:w-1/2 flex justify-center md:justify-end'>
           
           <img src={profileImage} alt='Vivek Kumar Singh'
-            className='w-100 h-108 p-6 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130, 69, 236, 0.5)] text-white'
+            className='w-100 h-108 p-6 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
           />
         
         </div>

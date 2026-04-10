@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import {FaGithub, FaLinkedin} from 'react-icons/fa'
-import {SiLeetcode} from 'react-icons/si'
+import React from 'react'
 import profileImage from '../../assets/profile1.jpeg'
 
 const Hero = () => {
@@ -21,12 +19,12 @@ const Hero = () => {
         
         <div className='md:w-1/2 text-center md:text-left mt-4 md:mt-0'>
           <img src={profileImage} alt='Vivek Kumar Singh'
-            className='w-100 h-115 object-cover p-8 drop-shadow-[0_10px_20px_rgba(130, 69, 236, 0.5)] text-white  md:w-full'
+            className='w-100 h-115 object-cover p-8 drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] md:w-full'
           />
   
         </div>
 
-        <div className='md:w-1/2 md:justify-end text-white md:mt-0 mt-4 pt-8'>
+        <div className='md:w-1/2 md:justify-end text-[var(--color-text)] md:mt-0 mt-4 pt-8'>
           <p className='leading-relaxed text-justify'>
             I am a Computer Science and Engineering student at Meerut Institute of Technology (Meerut) which is associated with Dr. A.P.J. Abdul Kalam Technical University (Lucknow) with strong foundations in Data Structures and Algorithms and hands-on experience in full-stack web development. I enjoy building scalable, user-focused applications using modern technologies.
           </p>
