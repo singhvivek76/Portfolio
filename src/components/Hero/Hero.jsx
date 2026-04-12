@@ -51,16 +51,16 @@ const Hero = () => {
   return (
     <section
       id='home'
-      className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-6 md:mt-18 lg:mt-16'
+      className='py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-3 md:mt-18 lg:mt-16'
     >
-      <div className='flex w-full flex-col-reverse md:flex-row justify-between items-center mt-8'>
+      <div className='flex w-full flex-col-reverse md:flex-row justify-between items-center mt-4'>
         <div className='md:w-1/2 text-center md:text-left mt-4 md:mt-0'>
           
           <h2 className='mb-4 text-4xl lg:text-5xl font-bold tracking-tight leading-tight sm:text-5xl'>
             <span className='text-[var(--color-text)] sm:text-4xl md:text-5xl'>
               Hello, I'm
             </span> <br />
-            <span className='bg-linear-to-r text-bold text-[31px] md:text-[38px] lg:text-[45px] from-purple-400 to-pink-500 bg-clip-text text-transparent inline-block min-w-70 sm:min-w-40 lg:min-w-200'>
+            <span className='bg-linear-to-r text-bold text-[30px] md:text-[36px] lg:text-[45px] from-purple-400 to-pink-500 bg-clip-text text-transparent inline-block min-w-70 sm:min-w-40 lg:min-w-200'>
               {displayText}
               <span className='animate-pulse'>|</span>
             </span>
