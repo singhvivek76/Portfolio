@@ -60,7 +60,7 @@ const Hero = () => {
             <span className='text-[var(--color-text)] sm:text-4xl md:text-5xl'>
               Hello, I'm
             </span> <br />
-            <span className='bg-linear-to-r text-bold text-[28px] md:text-[35px] lg:text-[45px] from-purple-400 to-pink-500 bg-clip-text text-transparent inline-block min-w-70 sm:min-w-40 lg:min-w-200'>
+            <span className='bg-linear-to-r text-bold text-[31px] md:text-[38px] lg:text-[45px] from-purple-400 to-pink-500 bg-clip-text text-transparent inline-block min-w-70 sm:min-w-40 lg:min-w-200'>
               {displayText}
               <span className='animate-pulse'>|</span>
             </span>
