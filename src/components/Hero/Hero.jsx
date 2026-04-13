@@ -78,7 +78,7 @@ const Hero = () => {
                       >
                         <FaGithub size={28} />
                       </a>
-                      <a href="https://www.linkedin.com/in/singhvivek76/"
+                      <a href="https://www.linkedin.com/in/toviveksinghh76/"
                         target="_blank" rel="noopener noreferrer"
                         className='text-[var(--color-text-muted)] hover:text-[#8245ec]'
                       >
@@ -118,7 +118,7 @@ const Hero = () => {
         <div className='md:w-1/2 flex justify-center md:justify-end'>
           
           <img src={profileImage} alt='Vivek Kumar Singh'
-            className='w-100 h-108 p-6 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
+            className='w-70 h-70 p-6 md:w-90 md:h-90 lg:w-100 lg:h-100 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
           />
         
         </div>

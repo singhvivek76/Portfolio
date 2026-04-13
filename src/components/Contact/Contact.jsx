@@ -85,7 +85,7 @@ const Contact = ({ theme }) => {
               <FaGithub size={28} />
             </a>
             <a
-              href="https://www.linkedin.com/in/singhvivek76/"
+              href="https://www.linkedin.com/in/toviveksinghh76/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--color-text-muted)] hover:text-[#8245ec]"

@@ -113,7 +113,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
                 >
                   <FaGithub size={24} />
                 </a>
-                <a href="https://www.linkedin.com/in/singhvivek76/"
+                <a href="https://www.linkedin.com/in/toviveksinghh76/"
                   target="_blank" rel="noopener noreferrer"
                   className='text-[var(--color-text-muted)] hover:text-[var(--color-text)]'
                 >
