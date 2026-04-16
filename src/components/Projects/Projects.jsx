@@ -27,7 +27,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -45,7 +45,7 @@ const Projects = () => {
               <h3 className="text-2xl font-bold text-[var(--color-text)] mb-2">
                 {project.title}
               </h3>
-              <p className="text-[var(--color-text-soft)] mb-4 pt-4 line-clamp-4">
+              <p className="text-[var(--color-text-soft)] mb-4 pt-4 line-clamp-5">
                 {project.description}
               </p>
               <div className="mb-4">
