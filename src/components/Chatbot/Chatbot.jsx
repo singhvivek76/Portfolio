@@ -36,7 +36,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      text: "Hi, I'm Vivek's portfolio assistant. Ask about skills, projects, education, or use commands like 'go to projects' and 'open GitHub'.",
+      text: "Hi, I'm Vivek's assistant. Ask about skills, projects, education, or use commands like 'go to projects', 'open GitHub' and 'open Resume'.",
     },
   ]);
   const messagesEndRef = useRef(null);
@@ -291,13 +291,13 @@ const Chatbot = () => {
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-26 right-4 z-[70] flex h-[34rem] w-[calc(100vw-2rem)] max-w-[24rem] flex-col overflow-hidden rounded-[1.75rem] border border-white/10 bg-[#0b0719]/95 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+        <div className="fixed bottom-26 right-4 z-[70] flex h-[36rem] w-[calc(100vw-2rem)] max-w-[24rem] flex-col overflow-hidden rounded-[1.75rem] border border-white/10 bg-[#0b0719]/95 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
           <div className="border-b border-white/10 bg-gradient-to-r from-[#140b31] via-[#1d113f] to-[#2a1346] px-5 py-4">
             <div className="flex items-start justify-between gap-3">
               <div>
                 
-                <h3 className="text-lg font-semibold text-white text-center">Portfolio Chatbot</h3>
-                <p className="mt-1 text-sm text-gray-300 text-center">Chat or use voice to explore Vivek's portfolio.</p>
+                <h3 className="text-lg font-semibold text-white text-center">Chatbot</h3>
+                <p className="mt-1 text-sm text-gray-300 text-center">Chat or use voice.</p>
               </div>
 
                 <button
