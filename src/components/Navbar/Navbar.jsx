@@ -3,6 +3,7 @@ import { useState } from 'react'
 import {FiMenu, FiMoon, FiSun, FiX} from 'react-icons/fi'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {SiLeetcode} from 'react-icons/si'
+import LogoImage from '../../assets/Logo.jpeg'
 
 const Navbar = ({ theme, onToggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,10 +49,11 @@ const Navbar = ({ theme, onToggleTheme }) => {
     }`}>
         <div className='py-5 flex justify-between items-center text-[var(--color-text)]'>
           <div className='text-lg font-bold cursor-pointer'>
-            <span className='text-[#8245ec]'>&lt;</span>
-            <span className='text-[var(--color-text)]'> Vivek Kumar Singh</span>
-            <span className='text-[#8245ec]'>/</span>
-            <span className='text-[#8245ec]'>&gt;</span>
+
+            <img src={LogoImage} alt='Logo'
+               className='w-20 h-20 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
+            />
+            
           </div>
           
           <ul className='hidden md:flex space-x-8 text-[var(--color-text-muted)]'>
