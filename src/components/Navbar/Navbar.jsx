@@ -51,7 +51,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
           <div className='text-lg font-bold cursor-pointer'>
 
             <img src={LogoImage} alt='Logo'
-               className='w-20 h-20 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
+               className='w-15 h-15 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
             />
             
           </div>
