@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import About from './components/About/About'
+import Experiences from './components/Experiences/Experiences'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Education from './components/Education/Education'
@@ -10,8 +11,6 @@ import Footer from './components/Footer/Footer'
 import Chatbot from './components/Chatbot/Chatbot'
 import BlurBlob from './BlurBlob'
 
-
-import './App.css'
 
 const getInitialTheme = () => {
   if (typeof window === 'undefined') {
@@ -49,6 +48,7 @@ const App = () => {
         <Navbar theme={theme} onToggleTheme={toggleTheme} />
         <Hero />
         <About />
+        <Experiences />
         <Skills />
         <Projects />
         <Education />

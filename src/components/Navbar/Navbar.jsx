@@ -37,6 +37,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
   const menuItems = [
     {id: "home", label: "Home"},
     {id: "about", label: "About"},
+    {id: "experiences", label: "Experiences"},
     {id: "skills", label: "Skills"},
     {id: "projects", label: "Projects"},
     {id: "education", label: "Education"},
