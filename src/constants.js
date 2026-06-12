@@ -107,7 +107,7 @@ export const SkillsInfo = [
     {
       id: 0,
       img: EduskillsLogo,
-      role: " MERN Full-Stack Developer Virtual Internship",
+      role: " MERN Full-Stack Development Virtual Internship",
       company: "Eduskills",
       date: "April 2026 - June 2026",
       desc: "This internship provided me with extensive hands-on experience in modern web development technologies and industry-standard development practices. Throughout the program, I worked on both frontend and backend technologies, gaining practical exposure to building scalable full-stack web applications.",

@@ -72,7 +72,6 @@ myportfolio/
 |   |   |-- Projects/
 |   |   `-- Skills/
 |   |-- App.jsx
-|   |-- App.css
 |   |-- BlurBlob.jsx
 |   |-- constants.js
 |   |-- index.css
