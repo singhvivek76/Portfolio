@@ -11,8 +11,9 @@ const Footer = () => {
         <hr className="border-[var(--color-border)] mb-6" />
         {/* Copyright Text */}
         <p className="text-sm text-[var(--color-text-soft)] mt-6">
-          © 2026 Vivek Kumar singh. All rights reserved.
+          © 2026 Vivek Kumar Singh. <br />All rights reserved.
         </p>
+        
       </div>
     </footer>
   );
