@@ -163,7 +163,7 @@ export const SkillsInfo = [
       description:
         "An interactive, real-time virtual drawing canvas controlled entirely by hand gestures. Draw, sketch, erase, render 2D geometric shapes, resize brushes with a pinch, and manage your artwork — all using natural hand gestures",
       image: AIGestureAppLogo,
-      tags: ["Python", "OpenCV", "MediaPipe", "NumPy"],
+      tags: ["Python","Webcam", "OpenCV", "MediaPipe", "NumPy"],
       github: "https://github.com/singhvivek76/AI-Gesture-Draw",
     
     },
