@@ -38,7 +38,7 @@ import gptLogo from './assets/work_logo/gpt.png';
 import webmeetLogo from './assets/work_logo/webmeet.png';
 import LinkUpLogo from './assets/work_logo/LinkUp.png';
 import PortfolioLogo from './assets/work_logo/Portfolio.png'
-
+import AIGestureAppLogo from './assets/work_logo/AI-Gesture-Draw.png'
 
 
 export const SkillsInfo = [
@@ -159,6 +159,16 @@ export const SkillsInfo = [
   export const projects = [
     {
       id: 0,
+      title: "AI Gesture Drawing App",
+      description:
+        "An interactive, real-time virtual drawing canvas controlled entirely by hand gestures. Draw, sketch, erase, render 2D geometric shapes, resize brushes with a pinch, and manage your artwork — all using natural hand gestures",
+      image: AIGestureAppLogo,
+      tags: ["Python", "OpenCV", "MediaPipe", "NumPy"],
+      github: "https://github.com/singhvivek76/AI-Gesture-Draw",
+    
+    },
+    {
+      id: 1,
       title: "Portfolio",
       description:
         "This is a comprehensive personal portfolio website , a full-stack developer. The portfolio is built as a modern, responsive single-page application (SPA) using React and Vite, featuring a sleek dark theme with interactive elements and an AI-powered chatbot assistant and Chatbot is built with logic.",
@@ -169,7 +179,7 @@ export const SkillsInfo = [
     
     },
     {
-      id: 1,
+      id: 2,
       title: "LinkUp",
       description:
         "LinkUp is a full-stack social networking app with a Node.js/Express/MongoDB backend and a Next.js frontend. The backend handles authentication, profiles, posts, connections, comments, and file uploads, while the frontend provides the user-facing pages, layouts, and Redux-powered state management.",
@@ -179,7 +189,7 @@ export const SkillsInfo = [
     
     },
     {
-      id: 2,
+      id: 3,
       title: "GPT",
       description:
         "Developed a full-stack GPT chat application with persistent conversation threads and integrated OpenAI Chat API to generate assistant replies. Built REST endpoints for chat and thread management (create/read/delete), implemented OpenAI request/response handling, and saved message history for each thread.",
@@ -189,7 +199,7 @@ export const SkillsInfo = [
     
     },
     {
-      id: 3,
+      id: 4,
       title: "WebMeet",
       description:
         "Built a full-stack video conferencing application using MERN stack with WebRTC for peer-to-peer video/audio text chat streaming.",
