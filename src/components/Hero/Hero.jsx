@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {SiLeetcode} from 'react-icons/si'
+import { IoMdDownload } from "react-icons/io";
 import profileImage from '../../assets/profile.jpeg'
 
 const texts = ['Vivek Kumar Singh', 'Full Stack Developer', 'Problem Solver'];
@@ -110,6 +111,7 @@ const Hero = () => {
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
+            <IoMdDownload size={32} className="inline-block flex items-center justify-center" />
             Download Resume
           </a>
       
