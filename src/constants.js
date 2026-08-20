@@ -188,18 +188,9 @@ export const SkillsInfo = [
       github: "https://github.com/singhvivek76/LinkUp",
     
     },
+  
     {
       id: 3,
-      title: "GPT",
-      description:
-        "Developed a full-stack GPT chat application with persistent conversation threads and integrated OpenAI Chat API to generate assistant replies. Built REST endpoints for chat and thread management (create/read/delete), implemented OpenAI request/response handling, and saved message history for each thread.",
-      image: gptLogo,
-      tags: ["HTML", "CSS", "JavaScript", "React JS", "API", "OpneAI", "MongoDB", "Express", "Node JS"],
-      github: "https://github.com/singhvivek76/GPT",
-    
-    },
-    {
-      id: 4,
       title: "WebMeet",
       description:
         "Built a full-stack video conferencing application using MERN stack with WebRTC for peer-to-peer video/audio text chat streaming.",
