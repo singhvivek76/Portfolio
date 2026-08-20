@@ -1,5 +1,7 @@
 import React from 'react'
 import {projects} from '../../constants'
+import {FaGithub} from 'react-icons/fa'
+import { FiExternalLink } from "react-icons/fi";
 
 const Projects = () => {
   // const [selectedProject, setSelectedProject] = useState(null);
@@ -67,6 +69,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="w-1/2 bg-[var(--color-surface-soft)] hover:bg-purple-800 text-[var(--color-text-muted)] lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
                   >
+                    <FaGithub size={20} className="inline-block flex items-center justify-center mr-1" />
                     View Code
                   </a>
                   <a
@@ -75,6 +78,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
                   >
+                    <FiExternalLink size={20} className="inline-block flex items-center justify-center mr-2" />
                     View Live
                   </a>
                 </div>

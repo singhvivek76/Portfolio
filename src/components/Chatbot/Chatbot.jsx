@@ -284,7 +284,7 @@ const Chatbot = () => {
       <button
         type="button"
         onClick={() => setIsOpen((current) => !current)}
-        className="fixed bottom-6 right-6 z-[70] flex h-16 w-16 items-center justify-center rounded-full border border-purple-300/30 bg-gradient-to-br from-[#8245ec] via-[#a855f7] to-[#ec4899] text-white shadow-[0_0_30px_rgba(130,69,236,0.45)] transition hover:scale-105"
+        className="fixed bottom-6 right-6 z-[70] flex h-16 w-16 cursor-pointer items-center justify-center rounded-full border border-purple-300/30 bg-gradient-to-br from-[#8245ec] via-[#a855f7] to-[#ec4899] text-white shadow-[0_0_30px_rgba(130,69,236,0.45)] transition hover:scale-105"
         aria-label="Toggle portfolio assistant"
       >
         {isOpen ? <FaTimes size={20} /> : <FaRobot size={22} />}
@@ -303,7 +303,7 @@ const Chatbot = () => {
                 <button
                 type="button"
                 onClick={() => setVoiceReplyEnabled((current) => !current)}
-                className={`rounded-full border px-3 py-2 text-xs font-medium transition ${
+                className={`rounded-full cursor-pointer border px-3 py-2 text-xs font-medium transition ${
                   voiceReplyEnabled
                     ? 'border-purple-400/60 bg-purple-500/20 text-purple-100'
                     : 'border-white/10 bg-white/5 text-gray-300'
@@ -325,7 +325,7 @@ const Chatbot = () => {
                 key={command}
                 type="button"
                 onClick={() => handleSend(command)}
-                className="rounded-full border border-purple-400/20 bg-purple-500/10 px-3 py-1 text-xs text-purple-100 transition hover:bg-purple-500/20"
+                className="rounded-full cursor-pointer border border-purple-400/20 bg-purple-500/10 px-3 py-1 text-xs text-purple-100 transition hover:bg-purple-500/20"
               >
                 {command}
               </button>
@@ -366,7 +366,7 @@ const Chatbot = () => {
               <button
                 type="button"
                 onClick={startListening}
-                className={`flex h-12 w-12 items-center justify-center rounded-full border transition ${
+                className={`flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border transition ${
                   isListening
                     ? 'border-pink-400/60 bg-pink-500/20 text-pink-200'
                     : 'border-purple-400/20 bg-purple-500/10 text-purple-100'
@@ -393,7 +393,7 @@ const Chatbot = () => {
               <button
                 type="button"
                 onClick={() => handleSend(input)}
-                className="flex h-12 w-12 items-center justify-center rounded-full w-full bg-gradient-to-r from-[#8245ec] to-[#ec4899] text-white transition hover:scale-105"
+                className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full w-full bg-gradient-to-r from-[#8245ec] to-[#ec4899] text-white transition hover:scale-105"
                 aria-label="Send message"
               >
                 <FaPaperPlane />

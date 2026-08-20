@@ -57,12 +57,12 @@ const Navbar = ({ theme, onToggleTheme }) => {
             
           </div>
           
-          <ul className='hidden md:flex space-x-8 text-[var(--color-text-muted)]'>
+          <ul className='hidden cursor-pointer md:flex space-x-8 text-[var(--color-text-muted)]'>
             {menuItems.map((item) => (
               <li key={item.id} className={`cursor-pointer hover:text-[#8245ec] ${
                 activeSection === item.id ? 'text-[#8245ec]' : ''
               }`}>
-                <button onClick={() => handleMenuItemClick(item.id)}>
+                <button onClick={() => handleMenuItemClick(item.id)} className="cursor-pointer">
                   {item.label}
                 </button>
               </li>
@@ -73,7 +73,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
               <button
                 type="button"
                 onClick={onToggleTheme}
-                className='flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-surface-soft)] text-[var(--color-text)] transition hover:border-[#8245ec] hover:text-[#8245ec]'
+                className='flex h-10 w-10 items-center justify-center cursor-pointer rounded-full border border-[var(--color-border)] bg-[var(--color-surface-soft)] text-[var(--color-text)] transition hover:border-[#8245ec] hover:text-[#8245ec]'
                 aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
               >
                 {theme === 'dark' ? <FiSun className='text-xl' /> : <FiMoon className='text-xl' />}

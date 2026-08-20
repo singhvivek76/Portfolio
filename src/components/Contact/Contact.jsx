@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {SiLeetcode} from 'react-icons/si'
+import { IoIosSend } from "react-icons/io";
 
 const Contact = ({ theme }) => {
   const form = useRef();
@@ -147,7 +148,7 @@ const Contact = ({ theme }) => {
               type="submit"
               className="w-full bg-gradient-to-r cursor-pointer transition duration-300 transform hover:scale-105 from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-full hover:opacity-90 transition"
             >
-              Send
+              <IoIosSend size={28} className="inline-block" />
             </button>
           </form>
         </div>
