@@ -120,7 +120,7 @@ const Hero = () => {
         <div className='md:w-1/2 flex justify-center md:justify-end'>
           
           <img src={profileImage} alt='Vivek Kumar Singh'
-            className='w-70 h-70 p-6 md:w-90 md:h-90 lg:w-100 lg:h-100 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]'
+            className='w-70 h-70 p-6 md:w-90 md:h-90 lg:w-100 lg:h-100 rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] transform transition-transform duration-300 hover:scale-105'
           />
         
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import profileImage from '../../assets/profile1.jpeg'
+import profileImage from '../../assets/profile1.png'
 
 const Hero = () => {
   
@@ -18,8 +18,8 @@ const Hero = () => {
       <div className='flex flex-col md:flex-row justify-between mt-4 md:mt-0 gap-x-4 md:flex-row'>
         
         <div className='md:w-1/2 text-center md:text-left mt-4 md:mt-0'>
-          <img src={profileImage} alt='Vivek Kumar Singh'
-            className='w-100 h-115 object-cover p-8 drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] md:w-full'
+          <img src={profileImage} alt='profile'
+            className='w-100 h-130 transform transition-transform duration-300 hover:scale-105 object-cover p-8 drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)] md:w-full'
           />
   
         </div>
