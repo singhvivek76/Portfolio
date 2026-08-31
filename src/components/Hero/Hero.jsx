@@ -71,17 +71,19 @@ const Hero = () => {
           <p className="text-base sm:text-lg md:text-lg text-[var(--color-text-soft)] mb-4 mt-4 leading-relaxed text-justify">
             Full-Stack Developer and competitive programmer with strong DSA fundamentals, experienced in building scalable web applications using modern tech stacks.
           </p>
+          <br />
+        
 
-          <div className='flex md:flex space-x-4 text-[var(--color-text-muted)] mr-4 justify-center items-center md:justify-start'>
+          <div className='flex md:flex space-x-4 text-[var(--color-text-muted)] mr-4 justify-center items-center md:justify-center'>
                       <a href="https://github.com/singhvivek76"
                         target="_blank" rel="noopener noreferrer"
-                        className='text-[var(--color-text-muted)] hover:text-[#8245ec]'
+                        className='text-[var(--color-text-muted)] hover:text-[#8245ec] mr-5'
                       >
                         <FaGithub size={28} />
                       </a>
                       <a href="https://www.linkedin.com/in/toviveksinghh76/"
                         target="_blank" rel="noopener noreferrer"
-                        className='text-[var(--color-text-muted)] hover:text-[#8245ec]'
+                        className='text-[var(--color-text-muted)] hover:text-[#8245ec] mr-5'
                       >
                         <FaLinkedin size={28} />
                       </a>
@@ -92,6 +94,7 @@ const Hero = () => {
                         <SiLeetcode size={28} />
                       </a>
           </div>
+          <br />
         
           <button
             className="px-10 mt-4 py-4 rounded-full mr-3 mb-2 hover:bg-slate-300 text-white sm:w-fit bg-linear-to-br from-blue-500 via-purple-500 to-pink-500 items-center justify-center"
