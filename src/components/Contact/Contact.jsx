@@ -75,13 +75,14 @@ const Contact = ({ theme }) => {
             open. Whether you have a question or just want to say hi, I&apos;ll
             try my best to get back to you!
           </p>
+          <br />
 
-          <div className="flex md:flex space-x-4 text-[var(--color-text-muted)] mr-4 justify-center items-center md:justify-start">
+          <div className="flex md:flex space-x-4 text-[var(--color-text-muted)] mr-4 justify-center items-center md:justify-center">
             <a
               href="https://github.com/singhvivek76"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--color-text-muted)] hover:text-[#8245ec]"
+              className="text-[var(--color-text-muted)] hover:text-[#8245ec] mr-8"
             >
               <FaGithub size={28} />
             </a>
@@ -89,7 +90,7 @@ const Contact = ({ theme }) => {
               href="https://www.linkedin.com/in/toviveksinghh76/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[var(--color-text-muted)] hover:text-[#8245ec]"
+              className="text-[var(--color-text-muted)] hover:text-[#8245ec] mr-8"
             >
               <FaLinkedin size={28} />
             </a>

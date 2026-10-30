@@ -21,6 +21,10 @@ import dockerLogo from './assets/tech_logo/docker.png';
 import cicdLogo from './assets/tech_logo/cicd.avif';
 import kubernetesLogo from './assets/tech_logo/kubernetes.png'
 import pythonLogo from './assets/tech_logo/Python.png'
+import MLLogo from './assets/tech_logo/ML.jpeg'
+import SKlearn from './assets/tech_logo/sklearn.png'
+import NumPy from './assets/tech_logo/NumPy.png'
+import Pandas from './assets/tech_logo/pandas.png'
 
 
 
@@ -39,9 +43,26 @@ import webmeetLogo from './assets/work_logo/webmeet.png';
 import LinkUpLogo from './assets/work_logo/LinkUp.png';
 import PortfolioLogo from './assets/work_logo/Portfolio.png'
 import AIGestureAppLogo from './assets/work_logo/AI-Gesture-Draw.png'
+import SkillTwinLogo from './assets/work_logo/SkillTwin.png'
+import SnapClassLogo from './assets/work_logo/SnapClass.png'
 
 
 export const SkillsInfo = [
+  {
+    title: 'Machine Learning & AI',
+    skills: [
+      { name: 'Machine Learning', logo: MLLogo},
+      
+    ],
+  },
+  {
+    title: 'Libraries & Frameworks',
+    skills: [
+      { name: 'Scikit-learn', logo: SKlearn },
+      { name: 'NumPy', logo: NumPy},
+      { name: 'Pandas', logo: Pandas},
+    ],
+  },
   {
     title: 'Languages',
     skills: [
@@ -106,7 +127,27 @@ export const SkillsInfo = [
     {
       id: 0,
       img: EduskillsLogo,
-      role: " MERN Full-Stack Development Virtual Internship",
+      role: "Machine Learning & Data Science Virtual Internship",
+      company: "Eduskills",
+      date: "August 2026 - October 2026",
+      desc: "During my Machine Learning and Data Science internship, I learned Python libraries like NumPy and Pandas, data visualization using Matplotlib and Seaborn, and Machine Learning techniques using Scikit-learn. I also gained knowledge of NLP, SQL, Flask, model evaluation, and optimization.",
+      skills: [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Matplotlib and Seaborn",
+        "Scikit-learn",
+        "Feature Engineering and Data Preprocessing", 
+        "Model Evaluation and Optimization",
+        "Basic NLP and Text Classification",
+        "SQL integration with Python",
+        "Flask",
+      ],
+    },
+    {
+      id: 1,
+      img: EduskillsLogo,
+      role: "MERN Full-Stack Development Virtual Internship",
       company: "Eduskills",
       date: "April 2026 - June 2026",
       desc: "This internship provided me with extensive hands-on experience in modern web development technologies and industry-standard development practices. Throughout the program, I worked on both frontend and backend technologies, gaining practical exposure to building scalable full-stack web applications.",
@@ -158,16 +199,36 @@ export const SkillsInfo = [
   export const projects = [
     {
       id: 0,
+      title: "SnapClass - AI Attendance System",
+      description:
+        "AI-assisted classroom attendance using facial recognition and optional voice recognition. SnapClass is a web application intended to help teachers record classroom attendance from photographs or a classroom audio recording.",
+      image: SnapClassLogo,
+      tags: ["Python","Streamlit", "Supabase Python client", "scikit-learn", "NumPy", "Pandas", "librosa", "Resemblyzer", "Segno"],
+      github: "https://github.com/singhvivek76/SnapClass",
+      webapp: "https://snapclassess-mains.streamlit.app/",
+    },
+    {
+      id: 1,
+      title: "SkillTwin - GitHub Repository Analyzer",
+      description:
+        " It ingests public GitHub repositories, extracts architecture and codebase metrics, and uses Groq accelerated LLMs to generate a multi-dimensional developer skill profile. SkillTwin is an AI-driven skill assessment platform built on the MERN stack.",
+      image: SkillTwinLogo,
+      tags: ["React", "JavaScript", "Tailwind CSS", "Node.js", "Express", "Mongoose", "bcryptjs", "MongoDB", "GROQ_API_KEY"],
+      github: "https://github.com/singhvivek76/SkillTwin",
+      webapp: "https://skilltwin-1.onrender.com/",
+    },
+    {
+      id: 2,
       title: "AI Gesture Drawing App",
       description:
-        "An interactive, real-time virtual drawing canvas controlled entirely by hand gestures. Draw, sketch, erase, render 2D geometric shapes, resize brushes with a pinch, and manage your artwork — all using natural hand gestures",
+        "An interactive, real-time virtual drawing canvas controlled entirely by hand gestures. Draw, sketch, erase, render 2D geometric shapes, resize brushes with a pinch, and manage your artwork — all using natural hand gestures.",
       image: AIGestureAppLogo,
       tags: ["Python","Webcam", "OpenCV", "MediaPipe", "NumPy"],
       github: "https://github.com/singhvivek76/AI-Gesture-Draw",
     
     },
     {
-      id: 1,
+      id: 3,
       title: "Portfolio",
       description:
         "This is a comprehensive personal portfolio website , a full-stack developer. The portfolio is built as a modern, responsive single-page application (SPA) using React and Vite, featuring a sleek dark theme with interactive elements and an AI-powered chatbot assistant and Chatbot is built with logic.",
@@ -178,7 +239,7 @@ export const SkillsInfo = [
     
     },
     {
-      id: 2,
+      id: 4,
       title: "LinkUp",
       description:
         "LinkUp is a full-stack social networking app with a Node.js/Express/MongoDB backend and a Next.js frontend. The backend handles authentication, profiles, posts, connections, comments, and file uploads, while the frontend provides the user-facing pages, layouts, and Redux-powered state management.",
@@ -189,7 +250,7 @@ export const SkillsInfo = [
     },
   
     {
-      id: 3,
+      id: 5,
       title: "WebMeet",
       description:
         "Built a full-stack video conferencing application using MERN stack with WebRTC for peer-to-peer video/audio text chat streaming.",

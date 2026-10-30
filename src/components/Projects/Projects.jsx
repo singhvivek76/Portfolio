@@ -34,7 +34,7 @@ const Projects = () => {
           <div
             key={project.id}
             //onClick={() => handleOpenModal(project)}
-            className="border border-[var(--color-border)] bg-[var(--color-bg-card)] backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
+            className="border border-[var(--color-border)] bg-[var(--color-bg-card)] backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
           >
             <div className="p-4">
               <img
@@ -67,7 +67,7 @@ const Projects = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-[var(--color-surface-soft)] hover:bg-purple-800 text-[var(--color-text-muted)] lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 bg-[var(--color-surface-soft)] hover:bg-purple-800 text-[var(--color-text-muted)] lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center cursor-pointer"
                   >
                     <FaGithub size={20} className="inline-block flex items-center justify-center mr-1" />
                     View Code
@@ -76,7 +76,7 @@ const Projects = () => {
                     href={project.webapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center cursor-pointer"
                   >
                     <FiExternalLink size={20} className="inline-block flex items-center justify-center mr-2" />
                     View Live
